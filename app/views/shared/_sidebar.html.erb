@@ -1,0 +1,21 @@
+<div class="span3">
+  <div class="well sidebar-nav">
+    <ul class="nav nav-list">
+      <li class="nav-header">Sidebar</li>
+      <li><i class="icon icon-check"> <%= link_to "Registration", @patient %></i></li>
+      <li>
+        <i class="icon icon-check<%= "-empty" if @patient.visits.blank? %>"> <%= link_to "Visits", patient_visits_path(@patient), disabled: @patient.visits.blank? %></i>
+      </li>
+      <li>
+        <i class="icon icon-check<%= "-empty" if @patient.patient_medical_conditions.blank? %>"> <%= link_to "Link3", "/path3", disabled: @patient.patient_medical_conditions.blank? %></i>
+      </li>
+    </ul>
+  </div>
+  <!--/.well -->
+</div>
+<!--/span-->
+<style type="text/css">
+    a[disabled] {
+        pointer-events: none;
+    }
+</style>

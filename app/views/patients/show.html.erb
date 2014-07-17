@@ -1,0 +1,94 @@
+<div class="row-fluid">
+  <div class="span12">
+
+    <%= render partial: "shared/sidebar" %>
+
+    <div class="span9">
+      <p>
+        <strong>Firstname:</strong>
+        <%= @patient.firstname %>
+      </p>
+
+      <p>
+        <strong>Middlename:</strong>
+        <%= @patient.middlename %>
+      </p>
+
+      <p>
+        <strong>Lastname:</strong>
+        <%= @patient.lastname %>
+      </p>
+
+      <p>
+        <strong>Date of birth:</strong>
+        <%= @patient.date_of_birth %>
+      </p>
+
+      <p>
+        <strong>Sex:</strong>
+        <%= @patient.sex %>
+      </p>
+
+      <p>
+        <strong>Addr1:</strong>
+        <%= @patient.addr1 %>
+      </p>
+
+      <p>
+        <strong>Addr2:</strong>
+        <%= @patient.addr2 %>
+      </p>
+
+      <p>
+        <strong>City:</strong>
+        <%= @patient.city %>
+      </p>
+
+      <p>
+        <strong>State:</strong>
+        <%= @patient.state %>
+      </p>
+
+      <p>
+        <strong>Zip code:</strong>
+        <%= @patient.zip_code %>
+      </p>
+
+      <p>
+        <strong>Phone1:</strong>
+        <%= @patient.phone1 %>
+      </p>
+
+      <p>
+        <strong>Phone2:</strong>
+        <%= @patient.phone2 %>
+      </p>
+
+      <p>
+        <strong>Salutation:</strong>
+        <%= @patient.salutation_id %>
+      </p>
+
+      <p>
+        <strong>Email1:</strong>
+        <%= @patient.email1 %>
+      </p>
+
+      <p>
+        <strong>Email2:</strong>
+        <%= @patient.email2 %>
+      </p>
+
+      <p>
+        <strong>Facebook account:</strong>
+        <%= @patient.facebook_account %>
+      </p>
+
+      <p>
+        <strong>Twitter account:</strong>
+        <%= @patient.twitter_account %>
+      </p>
+      <%= link_to 'Edit', edit_patient_path(@patient) %>
+    </div>
+  </div>
+</div>

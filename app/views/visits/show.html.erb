@@ -1,0 +1,67 @@
+<div class="row-fluid">
+  <div class="span12">
+
+    <%= render partial: "shared/sidebar" %>
+
+    <div class="span9">
+
+      <p>
+        <strong>Date visit:</strong>
+        <%= @visit.date_visit %>
+      </p>
+
+      <p>
+        <strong>Length since last visit:</strong>
+        <%= @visit.length_since_last_visit %>
+      </p>
+
+      <p>
+        <strong>Lens use per day:</strong>
+        <%= @visit.lens_use_per_day %>
+      </p>
+
+      <p>
+        <strong>Lens first use:</strong>
+        <%= @visit.lens_first_use %>
+      </p>
+
+      <p>
+        <strong>Dilation consent:</strong>
+        <%= @visit.dilation_consent %>
+      </p>
+
+      <p>
+        <strong>Privacy consent:</strong>
+        <%= @visit.privacy_consent %>
+      </p>
+
+      <p>
+        <strong>Test result:</strong>
+        <%= @visit.test_result %>
+      </p>
+
+      <p>
+        <strong>Patient:</strong>
+        <%= @visit.patient_id %>
+      </p>
+
+      <p>
+        <strong>Current meds:</strong>
+        <%= @visit.current_meds %>
+      </p>
+
+      <p>
+        <strong>Med allergy:</strong>
+        <%= @visit.med_allergy %>
+      </p>
+
+      <p>
+        <strong>Med allergy list:</strong>
+        <%= @visit.med_allergy_list %>
+      </p>
+
+      <%= link_to 'Edit', edit_patient_visit_path(@patient, @visit) %>
+
+    </div>
+  </div>
+</div>

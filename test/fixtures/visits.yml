@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_visit: 2014-07-17 21:27:39
+  length_since_last_visit: MyString
+  lens_use_per_day: 1
+  lens_first_use: false
+  dilation_consent: false
+  privacy_consent: false
+  test_result: MyText
+  patient_id: 1
+  current_meds: MyText
+  med_allergy: false
+  med_allergy_list: MyString
+
+two:
+  date_visit: 2014-07-17 21:27:39
+  length_since_last_visit: MyString
+  lens_use_per_day: 1
+  lens_first_use: false
+  dilation_consent: false
+  privacy_consent: false
+  test_result: MyText
+  patient_id: 1
+  current_meds: MyText
+  med_allergy: false
+  med_allergy_list: MyString

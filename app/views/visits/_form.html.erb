@@ -1,0 +1,67 @@
+<%= form_for([@patient, @visit]) do |f| %>
+    <% if @visit.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@visit.errors.count, "error") %> prohibited this visit from being saved:</h2>
+
+          <ul>
+            <% @visit.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :date_visit %>
+      <br>
+      <%= f.date_select :date_visit, start_year: 1950 %>
+    </div>
+    <div class="field">
+      <%= f.label :length_since_last_visit, start_year: 1950 %>
+      <br>
+      <%= f.date_select :length_since_last_visit %>
+    </div>
+    <div class="field">
+      <%= f.label :lens_use_per_day %>
+      <br>
+      <%= f.number_field :lens_use_per_day %>
+    </div>
+    <div class="field">
+      <%= f.label :lens_first_use %>
+      <br>
+      <%= f.check_box :lens_first_use %>
+    </div>
+    <div class="field">
+      <%= f.label :dilation_consent %>
+      <br>
+      <%= f.check_box :dilation_consent %>
+    </div>
+    <div class="field">
+      <%= f.label :privacy_consent %>
+      <br>
+      <%= f.check_box :privacy_consent %>
+    </div>
+    <div class="field">
+      <%= f.label :test_result %>
+      <br>
+      <%= f.text_area :test_result %>
+    </div>
+    <div class="field">
+      <%= f.label :current_meds %>
+      <br>
+      <%= f.text_area :current_meds %>
+    </div>
+    <div class="field">
+      <%= f.label :med_allergy %>
+      <br>
+      <%= f.check_box :med_allergy %>
+    </div>
+    <div class="field">
+      <%= f.label :med_allergy_list %>
+      <br>
+      <%= f.text_field :med_allergy_list %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>
