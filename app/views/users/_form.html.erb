@@ -1,0 +1,65 @@
+<% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% @user.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+<% end %>
+<fieldset>
+  <div class="field">
+    <%= f.label :email %>
+    <br>
+    <input type="email" name="user[email]" id="email_field" class="hidden fake-for-autocomplete" autocomplete="off" style="display: none;">
+    <%= f.text_field :email, :autocomplete => "off" %>
+  </div>
+  <div class="field">
+    <%= f.label :password %>
+    <br>
+    <input type="password" name="user[password]" id="password_field" class="hidden fake-for-autocomplete" autocomplete="off" style="display: none;">
+    <%= f.password_field :password, :autocomplete => "off" %>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation %>
+    <br>
+    <%= f.password_field :password_confirmation, :autocomplete => "off" %>
+  </div>
+</fieldset>
+<fieldset>
+  <div class="field">
+    <%= f.label :title_id %>
+    <br>
+    <%= f.select :title_id, Title.all.collect { |t| [t.name, t.id] } %>
+  </div>
+  <div class="field">
+    <%= f.label :firstname %>
+    <br>
+    <%= f.text_field :firstname %>
+  </div>
+  <div class="field">
+    <%= f.label :middlename %>
+    <br>
+    <%= f.text_field :middlename %>
+  </div>
+  <div class="field">
+    <%= f.label :lastname %>
+    <br>
+    <%= f.text_field :lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :license_num %>
+    <br>
+    <%= f.text_field :license_num %>
+  </div>
+  <div class="field">
+    <%= f.label :type %>
+    <br>
+    <%= f.select :type, ["Employee", "Admin"] %>
+  </div>
+</fieldset>
+<div class="actions">
+  <%= f.submit %>
+</div>

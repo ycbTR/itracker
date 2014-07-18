@@ -1,4 +1,4 @@
-class SalutationsController < ApplicationController
+class SalutationsController < AdminController
   before_action :set_salutation, only: [:show, :edit, :update, :destroy]
 
   # GET /salutations

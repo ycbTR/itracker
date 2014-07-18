@@ -22,3 +22,26 @@ end
 ["Need new glasses", "Want contact lenses", "Headaches"].each do |name|
   Reason.create(name: name)
 end
+
+
+Admin.create do |c|
+  c.firstname = "Admin"
+  c.middlename = "M"
+  c.lastname = "Lastname"
+  c.email = "admin@admin.com"
+  c.password = "123123123"
+  c.password_confirmation = "123123123"
+  c.license_num= "D-33029394"
+  c.title_id = Title.last.id
+end
+
+Employee.create do |c|
+  c.firstname = "Assistant"
+  c.middlename = "M"
+  c.lastname = "Lastname"
+  c.email = "employee@admin.com"
+  c.password = "123123123"
+  c.password_confirmation = "123123123"
+  c.license_num= "Em-33029394"
+  c.title_id = Title.first.id
+end

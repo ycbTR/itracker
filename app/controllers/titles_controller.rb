@@ -1,4 +1,4 @@
-class TitlesController < ApplicationController
+class TitlesController < AdminController
   before_action :set_title, only: [:show, :edit, :update, :destroy]
 
   # GET /titles

@@ -1,4 +1,4 @@
-class MedicalConditionsController < ApplicationController
+class MedicalConditionsController < AdminController
   before_action :set_medical_condition, only: [:show, :edit, :update, :destroy]
 
   # GET /medical_conditions
@@ -62,13 +62,13 @@ class MedicalConditionsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_medical_condition
-      @medical_condition = MedicalCondition.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_medical_condition
+    @medical_condition = MedicalCondition.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def medical_condition_params
-      params.require(:medical_condition).permit(:name)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def medical_condition_params
+    params.require(:medical_condition).permit(:name)
+  end
 end

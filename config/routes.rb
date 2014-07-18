@@ -1,25 +1,6 @@
 Itrack::Application.routes.draw do
 
-  resources :salutations
-  resources :titles
-  resources :reasons
-  resources :medical_conditions
-
-  resources :patients do
-    collection { post :search, to: 'patients#index' }
-    resources :patient_medical_conditions
-    resources :visits do
-      member do
-        get :exams
-        get :exam
-        delete :exam
-      end
-      resources :patient_visit_reasons
-    end
-  end
-
-
-  devise_for :users
+  devise_for :users, path: "sessions"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -35,6 +16,25 @@ Itrack::Application.routes.draw do
   end
 
   root 'application#index'
+
+  resources :salutations
+  resources :titles
+  resources :reasons
+  resources :medical_conditions
+  resources :users
+
+  resources :patients do
+    collection { post :search, to: 'patients#index' }
+    resources :patient_medical_conditions
+    resources :visits do
+      member do
+        get :exams
+        get :exam
+        delete :exam
+      end
+      resources :patient_visit_reasons
+    end
+  end
 
 
   # Example of regular route:

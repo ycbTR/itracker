@@ -1,4 +1,4 @@
-class ReasonsController < ApplicationController
+class ReasonsController < AdminController
   before_action :set_reason, only: [:show, :edit, :update, :destroy]
 
   # GET /reasons
