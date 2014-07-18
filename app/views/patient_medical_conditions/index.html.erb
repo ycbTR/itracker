@@ -30,7 +30,11 @@
         </tbody>
         <tfoot>
         <tr>
-          <td><%= link_to 'Edit Info', edit_patient_patient_medical_condition_path(@patient, @patient) %></td>
+          <td>
+            <%= link_to 'Edit Info', edit_patient_patient_medical_condition_path(@patient, @patient) %> |
+            <%= link_to 'Next', patient_visits_path(@patient) %>
+
+          </td>
         </tr>
         </tfoot>
       </table>

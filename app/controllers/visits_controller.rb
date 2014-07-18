@@ -6,6 +6,9 @@ class VisitsController < ApplicationController
   # GET /visits.json
   def index
     @visits = @patient.visits
+    if @visits.blank?
+      redirect_to new_patient_visit_path(@patient) and return
+    end
   end
 
   # GET /visits/1

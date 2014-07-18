@@ -7,7 +7,7 @@
         <i class="icon icon-check<%= "-empty" if @patient.patient_medical_conditions.blank? %>"> <%= link_to "Medical Conditions", patient_patient_medical_conditions_path(@patient) %></i>
       </li>
       <li>
-        <i class="icon icon-check<%= "-empty" if @patient.visits.blank? %>"> <%= link_to "Visits", patient_visits_path(@patient), disabled: @patient.visits.blank? %></i>
+        <i class="icon icon-check<%= "-empty" if @patient.visits.blank? %>"> <%= link_to "Visits", patient_visits_path(@patient) %></i>
       </li>
     </ul>
   </div>
