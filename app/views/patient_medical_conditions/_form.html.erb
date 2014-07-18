@@ -1,0 +1,55 @@
+<%= form_for(@patient, url: patient_patient_medical_condition_path(@patient, @patient), method: :put) do |f| %>
+    <%= f.fields_for :patient_medical_conditions, @patient_medical_conditions do |pm| %>
+        <% identifier = rand(19031903) %>
+        <div class="field">
+          <div class="row-fluid">
+            <div class="span12">
+              <div class="span4">
+                <span class=""> <%= pm.object.medical_condition.name %> </span>
+                <%= pm.hidden_field :medical_condition_id, class: "condition_id", data: {target: "##{identifier}"} %>
+                <%= pm.hidden_field :_destroy %>
+              </div>
+              <div class="span8" id="<%= identifier %>">
+                <label class="display-inline"> <%= pm.check_box :patient_affected, class: "condition_check" %>
+                  Self </label>
+                <label class="display-inline"> <%= pm.check_box :family_affected, class: "condition_check" %>
+                  Family </label>
+              </div>
+            </div>
+          </div>
+        </div>
+    <% end %>
+
+    <div class="actions">
+      <%= f.submit "SUBMIT", class: "btn btn-primary" %>
+    </div>
+
+<% end %>
+
+
+<script type="text/javascript">
+    function check() {
+        $.each($(".condition_id"), function (i, el) {
+            if ($($(el).data('target') + " input:checkbox:checked").length > 0) {
+                $(el).next('input').val('false');
+            }
+            else {
+                $(el).next('input').val('true');
+            }
+        })
+    }
+
+    $(function () {
+        check();
+        $('.condition_check').on('click', function () {
+            check();
+        });
+    })
+</script>
+
+<style>
+    .display-inline {
+        display: inline;
+        margin: 5px;
+    }
+</style>

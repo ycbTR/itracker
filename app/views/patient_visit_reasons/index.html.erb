@@ -1,0 +1,37 @@
+<div class="row-fluid">
+  <div class="span12">
+
+    <%= render partial: "shared/sidebar" %>
+
+    <div class="span9">
+
+      <h1>Listing Medical Conditions</h1>
+
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Visit Date</th>
+          <th>Reason</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <% @patient_visit_reasons.each do |patient_visit_reason| %>
+            <tr>
+              <td><%= @visit.date_visit.to_date %></td>
+              <td><%= patient_visit_reason.reason.name %></td>
+            </tr>
+        <% end %>
+        </tbody>
+        <tfoot>
+        <tr>
+          <td>
+            <%= link_to '< Back to Visit', patient_visit_path(@patient, @visit) %> |
+            <%= link_to 'Edit Info', edit_patient_visit_patient_visit_reason_path(@patient, @visit, @visit) %>
+          </td>
+        </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>

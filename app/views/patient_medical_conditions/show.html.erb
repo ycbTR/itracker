@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Medical condition:</strong>
+  <%= @patient_medical_condition.medical_condition_id %>
+</p>
+
+<p>
+  <strong>Patient affected:</strong>
+  <%= @patient_medical_condition.patient_affected %>
+</p>
+
+<p>
+  <strong>Family affected:</strong>
+  <%= @patient_medical_condition.family_affected %>
+</p>
+
+<%= link_to 'Edit', edit_patient_patient_medical_condition_path(@patient, @patient_medical_condition) %> |
+<%= link_to 'Back', patient_patient_medical_conditions_path(@patient) %>

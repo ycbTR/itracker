@@ -1,0 +1,42 @@
+<%= form_for(@visit, url: patient_visit_patient_visit_reason_path(@patient, @visit, @patient), method: :put) do |f| %>
+    <%= f.fields_for :patient_visit_reasons, @reasons do |r| %>
+        <div class="field">
+          <div class="row-fluid">
+            <div class="span12">
+              <label class="display-inline">
+                <%= check_box_tag :fake_destroy, 1, !r.object.new_record?, class: "condition_check" %>
+                <%= r.hidden_field :_destroy %>
+                <%= r.hidden_field :reason_id %>
+                <%= r.object.reason.name %>
+              </label>
+            </div>
+          </div>
+        </div>
+    <% end %>
+
+    <div class="actions">
+      <%= f.submit "SUBMIT", class: "btn btn-primary" %>
+    </div>
+
+<% end %>
+
+
+<script type="text/javascript">
+    function check() {
+        $.each($(".condition_check"), function (i, el) {
+            if ($(el).is(":checked")) {
+                $(el).next('input').val('false');
+            }
+            else {
+                $(el).next('input').val('true');
+            }
+        })
+    }
+
+    $(function () {
+        check();
+        $('.condition_check').on('click', function () {
+            check();
+        });
+    })
+</script>

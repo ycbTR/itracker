@@ -1,13 +1,13 @@
 <div class="span3">
   <div class="well sidebar-nav">
     <ul class="nav nav-list">
-      <li class="nav-header">Sidebar</li>
+      <li class="nav-header">Patient: <%= @patient.fullname %></li>
       <li><i class="icon icon-check"> <%= link_to "Registration", @patient %></i></li>
       <li>
-        <i class="icon icon-check<%= "-empty" if @patient.visits.blank? %>"> <%= link_to "Visits", patient_visits_path(@patient), disabled: @patient.visits.blank? %></i>
+        <i class="icon icon-check<%= "-empty" if @patient.patient_medical_conditions.blank? %>"> <%= link_to "Medical Conditions", patient_patient_medical_conditions_path(@patient) %></i>
       </li>
       <li>
-        <i class="icon icon-check<%= "-empty" if @patient.patient_medical_conditions.blank? %>"> <%= link_to "Link3", "/path3", disabled: @patient.patient_medical_conditions.blank? %></i>
+        <i class="icon icon-check<%= "-empty" if @patient.visits.blank? %>"> <%= link_to "Visits", patient_visits_path(@patient), disabled: @patient.visits.blank? %></i>
       </li>
     </ul>
   </div>

@@ -7,7 +7,7 @@
 
       <p>
         <strong>Date visit:</strong>
-        <%= @visit.date_visit %>
+        <%= @visit.date_visit.to_date %>
       </p>
 
       <p>
@@ -22,27 +22,22 @@
 
       <p>
         <strong>Lens first use:</strong>
-        <%= @visit.lens_first_use %>
+        <%= human_boolean @visit.lens_first_use %>
       </p>
 
       <p>
         <strong>Dilation consent:</strong>
-        <%= @visit.dilation_consent %>
+        <%= human_boolean @visit.dilation_consent %>
       </p>
 
       <p>
         <strong>Privacy consent:</strong>
-        <%= @visit.privacy_consent %>
+        <%= human_boolean @visit.privacy_consent %>
       </p>
 
       <p>
         <strong>Test result:</strong>
         <%= @visit.test_result %>
-      </p>
-
-      <p>
-        <strong>Patient:</strong>
-        <%= @visit.patient_id %>
       </p>
 
       <p>
@@ -52,7 +47,7 @@
 
       <p>
         <strong>Med allergy:</strong>
-        <%= @visit.med_allergy %>
+        <%= human_boolean @visit.med_allergy %>
       </p>
 
       <p>
@@ -60,7 +55,9 @@
         <%= @visit.med_allergy_list %>
       </p>
 
-      <%= link_to 'Edit', edit_patient_visit_path(@patient, @visit) %>
+      <%= link_to 'List', patient_visits_path(@patient) %>   |
+      <%= link_to 'Edit', edit_patient_visit_path(@patient, @visit) %> |
+      <%= link_to 'Reasons', patient_visit_patient_visit_reasons_path(@patient, @visit) %>
 
     </div>
   </div>

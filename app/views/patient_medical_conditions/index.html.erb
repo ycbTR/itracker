@@ -1,0 +1,39 @@
+<div class="row-fluid">
+  <div class="span12">
+
+    <%= render partial: "shared/sidebar" %>
+
+    <div class="span9">
+
+      <h1>Listing Medical Conditions</h1>
+
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Medical condition</th>
+          <th>Patient affected</th>
+          <th>Family affected</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <% @patient_medical_conditions.each do |patient_medical_condition| %>
+            <tr>
+              <td><%= patient_medical_condition.medical_condition.name %></td>
+              <td><%= patient_medical_condition.patient_affected %></td>
+              <td><%= patient_medical_condition.family_affected %></td>
+            </tr>
+        <% end %>
+        </tbody>
+        <tfoot>
+        <tr>
+          <td><%= link_to 'Edit Info', edit_patient_patient_medical_condition_path(@patient, @patient) %></td>
+        </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>

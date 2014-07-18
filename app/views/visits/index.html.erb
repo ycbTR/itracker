@@ -7,20 +7,11 @@
 
       <h1>Listing visits</h1>
 
-      <table>
+      <table class="table">
         <thead>
         <tr>
           <th>Date visit</th>
           <th>Length since last visit</th>
-          <th>Lens use per day</th>
-          <th>Lens first use</th>
-          <th>Dilation consent</th>
-          <th>Privacy consent</th>
-          <th>Test result</th>
-          <th>Patient</th>
-          <th>Current meds</th>
-          <th>Med allergy</th>
-          <th>Med allergy list</th>
           <th></th>
           <th></th>
           <th></th>
@@ -30,20 +21,11 @@
         <tbody>
         <% @visits.each do |visit| %>
             <tr>
-              <td><%= visit.date_visit %></td>
+              <td><%= visit.date_visit.to_date %></td>
               <td><%= visit.length_since_last_visit %></td>
-              <td><%= visit.lens_use_per_day %></td>
-              <td><%= visit.lens_first_use %></td>
-              <td><%= visit.dilation_consent %></td>
-              <td><%= visit.privacy_consent %></td>
-              <td><%= visit.test_result %></td>
-              <td><%= visit.patient_id %></td>
-              <td><%= visit.current_meds %></td>
-              <td><%= visit.med_allergy %></td>
-              <td><%= visit.med_allergy_list %></td>
-              <td><%= link_to 'Show', [@patient,visit] %></td>
+              <td><%= link_to 'Show', [@patient, visit] %></td>
               <td><%= link_to 'Edit', edit_patient_visit_path(@patient, visit) %></td>
-              <td><%= link_to 'Destroy', [@patient,visit], method: :delete, data: {confirm: 'Are you sure?'} %></td>
+              <td><%= link_to 'Destroy', [@patient, visit], method: :delete, data: {confirm: 'Are you sure?'} %></td>
             </tr>
         <% end %>
         </tbody>

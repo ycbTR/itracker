@@ -11,20 +11,25 @@
     <file path="/user.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405620323679" ignored="false" />
     <file path="/Dummy.txt" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405621528882" ignored="false" />
     <file path="/20140717182739_create_visits.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405626397141" ignored="false" />
-    <file path="/routes.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405625850163" ignored="false" />
+    <file path="/routes.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405710929094" ignored="false" />
     <file path="/application_controller.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405622148307" ignored="false" />
-    <file path="/fragment.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405622555378" ignored="false" />
-    <file path="/_form.html.erb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405626807970" ignored="false" />
+    <file path="/fragment.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405713320352" ignored="false" />
+    <file path="/_form.html.erb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405712923687" ignored="false" />
     <file path="/seeds.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405622984997" ignored="false" />
-    <file path="/show.html.erb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405626821768" ignored="false" />
-    <file path="/_sidebar.html.erb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405626799122" ignored="false" />
+    <file path="/show.html.erb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405711101740" ignored="false" />
+    <file path="/_sidebar.html.erb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405710800464" ignored="false" />
     <file path="/visits_controller.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405626782909" ignored="false" />
-    <file path="/patient.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405626178717" ignored="false" />
-    <file path="/visit.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405625940902" ignored="false" />
-    <file path="/index.html.erb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405630077123" ignored="false" />
-    <file path="/new.html.erb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405626842503" ignored="false" />
-    <file path="/edit.html.erb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405626937134" ignored="false" />
+    <file path="/patient.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405708565713" ignored="false" />
+    <file path="/visit.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405712585459" ignored="false" />
+    <file path="/index.html.erb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405713435472" ignored="false" />
+    <file path="/new.html.erb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405713055380" ignored="false" />
+    <file path="/edit.html.erb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405713064610" ignored="false" />
     <file path="/patients_controller.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405629001534" ignored="false" />
+    <file path="/patient_medical_conditions_controller.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405710222820" ignored="false" />
+    <file path="/patient_medical_condition.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405707309963" ignored="false" />
+    <file path="/application_helper.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405710508247" ignored="false" />
+    <file path="/patient_visit_reasons_controller.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405713034658" ignored="false" />
+    <file path="/patient_visit_reason.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405711075052" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +48,35 @@
     <favorites_list name="itrack" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/patient_visit_reasons/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="85" selection-start="707" selection-end="707" vertical-scroll-proportion="0.64356434">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="patient_visit_reasons_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/patient_visit_reasons_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_sidebar.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_sidebar.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="449" selection-end="642" vertical-scroll-proportion="-5.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -53,22 +86,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20140717182739_create_visits.rb" />
-        <option value="$PROJECT_DIR$/app/views/patients/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/visits_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_sidebar.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/visits/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/visits/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/visits/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/visits/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/visits/edit.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/controllers/patients_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/views/patient_medical_conditions/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/patient_medical_conditions/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/patient_medical_conditions_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/patient_medical_conditions/index.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/patients/_condition_fields.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/visits/index.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/patients/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/patient_visit_reason.rb" />
+        <option value="$PROJECT_DIR$/app/views/visits/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/visit.rb" />
+        <option value="$PROJECT_DIR$/app/views/patient_visit_reasons/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/patient_visit_reasons/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/patient_visit_reasons/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/patient_visit_reasons_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_sidebar.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/patient_visit_reasons/index.html.erb" />
       </list>
     </option>
   </component>
@@ -125,6 +158,146 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="itrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patient_visit_reasons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -421,14 +594,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1024" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.600863" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28212973" sideWeight="0.600863" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.399137" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -502,120 +675,118 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/patients/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/patient_visit_reason.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="157" selection-start="792" selection-end="792" vertical-scroll-proportion="-18.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/visits_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="46" selection-start="1697" selection-end="1697" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_sidebar.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="107" selection-start="330" selection-end="330" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/visits/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="25.541666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/visits/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="28" selection-start="70" selection-end="70" vertical-scroll-proportion="-2.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/visits/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="61" selection-start="1388" selection-end="1411" vertical-scroll-proportion="-11.041667">
+        <state line="4" column="2" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/visits/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="49" selection-start="1264" selection-end="1264" vertical-scroll-proportion="-13.833333">
+        <state line="59" column="69" selection-start="1395" selection-end="1395" vertical-scroll-proportion="-36.875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/visits/edit.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/patient_visit_reasons/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="94" selection-end="94" vertical-scroll-proportion="-2.5">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/views/visits/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/bundler/gems/ransack-6fa74a079ae3/lib/ransack/nodes/grouping.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/visits/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="10" selection-start="3766" selection-end="3766" vertical-scroll-proportion="-0.24763705">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/patients_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/patient_medical_conditions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="347" selection-end="347" vertical-scroll-proportion="0.2616279">
+        <state line="4" column="12" selection-start="112" selection-end="112" vertical-scroll-proportion="-2.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+    <entry file="file://$PROJECT_DIR$/app/models/visit.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.9073724">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="32" selection-end="32" vertical-scroll-proportion="0.056710776">
+        <state line="8" column="44" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/patients/_condition_fields.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/patient_medical_conditions/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="291" selection-end="291" vertical-scroll-proportion="0.2970297">
+        <state line="29" column="0" selection-start="1178" selection-end="1676" vertical-scroll-proportion="-1.6666666">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/patient_medical_conditions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="44" selection-start="204" selection-end="204" vertical-scroll-proportion="0.2268431">
+        <state line="31" column="49" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/patients/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/patient_medical_conditions/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="48" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="1019" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/patient_visit_reasons/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="750" selection-end="750" vertical-scroll-proportion="-11.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/patient_visit_reasons/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="64" selection-start="134" selection-end="192" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/patient_visit_reasons/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="64" selection-start="138" selection-end="196" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/patient_visit_reasons_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_sidebar.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="449" selection-end="642" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/patient_visit_reasons/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="85" selection-start="707" selection-end="707" vertical-scroll-proportion="0.64356434">
           <folding />
         </state>
       </provider>

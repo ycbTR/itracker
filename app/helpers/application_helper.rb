@@ -9,5 +9,8 @@ module ApplicationHelper
     link_to(name, '#', class: "add_fields", data: {id: id, fields: fields.gsub("\n", "")})
   end
 
+  def human_boolean(boolean)
+    boolean ? 'Yes' : 'No'
+  end
 
 end
