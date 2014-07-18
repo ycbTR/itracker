@@ -1,36 +1,28 @@
-<%= search_form_for @search,url: search_patients_path, method: :post do |f| %>
-
-    <%= f.condition_fields do |c| %>
-        <%= render "condition_fields", f: c %>
+<div class="row-fluid">
+  <div class="span4">
+    <h1>Listing patients</h1>
+  </div>
+  <div class="span8 well">
+    <%= search_form_for @search, url: search_patients_path, method: :post do |f| %>
+        <%= f.condition_fields do |c| %>
+            <%= render "condition_fields", f: c %>
+        <% end %>
+        <p><%= link_to_add_fields "Add Conditions", f, :condition %></p>
+        <%= f.submit "Search" %>
     <% end %>
-    <p><%= link_to_add_fields "Add Conditions", f, :condition %></p>
+  </div>
+</div>
 
-    <%= f.submit "Search" %>
-<% end %>
-<h1>Listing patients</h1>
-
-<table>
+<table class="table">
   <thead>
   <tr>
     <th>Firstname</th>
-    <th>Middlename</th>
     <th>Lastname</th>
     <th>Date of birth</th>
-    <th>Sex</th>
-    <th>Addr1</th>
-    <th>Addr2</th>
+    <th>Addr</th>
     <th>City</th>
     <th>State</th>
     <th>Zip code</th>
-    <th>Phone1</th>
-    <th>Phone2</th>
-    <th>Salutation</th>
-    <th>Email1</th>
-    <th>Email2</th>
-    <th>Facebook account</th>
-    <th>Twitter account</th>
-    <th></th>
-    <th></th>
     <th></th>
   </tr>
   </thead>
@@ -39,25 +31,15 @@
   <% @patients.each do |patient| %>
       <tr>
         <td><%= patient.firstname %></td>
-        <td><%= patient.middlename %></td>
         <td><%= patient.lastname %></td>
         <td><%= patient.date_of_birth %></td>
-        <td><%= patient.sex %></td>
-        <td><%= patient.addr1 %></td>
-        <td><%= patient.addr2 %></td>
+        <td><%= [patient.addr1, patient.addr2].join(' ') %></td>
         <td><%= patient.city %></td>
         <td><%= patient.state %></td>
         <td><%= patient.zip_code %></td>
-        <td><%= patient.phone1 %></td>
-        <td><%= patient.phone2 %></td>
-        <td><%= patient.salutation_id %></td>
-        <td><%= patient.email1 %></td>
-        <td><%= patient.email2 %></td>
-        <td><%= patient.facebook_account %></td>
-        <td><%= patient.twitter_account %></td>
-        <td><%= link_to 'Show', patient %></td>
-        <td><%= link_to 'Edit', edit_patient_path(patient) %></td>
-        <td><%= link_to 'Destroy', patient, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+        <td><%= link_to 'Show', patient %>                     |
+          <%= link_to 'Edit', edit_patient_path(patient) %> |
+          <%= link_to 'Destroy', patient, method: :delete, data: {confirm: 'Are you sure?'} %></td>
       </tr>
   <% end %>
   </tbody>
@@ -68,4 +50,4 @@
 
 <br>
 
-<%= link_to 'New Patient', new_patient_path %>
+<%= link_to 'Create New Patient', new_patient_path %>

@@ -1,0 +1,50 @@
+<div class="row-fluid">
+  <div class="span12">
+
+    <%= render partial: "shared/sidebar" %>
+
+    <div class="span9">
+
+      <h3>Listing Exams for Visit Date: <%= @visit.date_visit.to_date %></h3>
+
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Attachment</th>
+          <th></th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <% @exams.each do |exam| %>
+            <tr>
+              <td><%= link_to exam.attachment_file_name, exam_patient_visit_path(@patient, @visit, exam_id: exam.id), "_blank" => true %></td>
+              <td><%= link_to "DELETE", exam_patient_visit_path(@patient, @visit, exam_id: exam.id), "_blank" => true, method: :delete, confirm: "Are sure you want to erase this record?" %></td>
+            </tr>
+        <% end %>
+        <% if @exams.blank? %>
+            <tr>
+              <td colspan="2">No Exam Available</td>
+            </tr>
+        <% end %>
+        </tbody>
+        <tfoot>
+        <tr>
+          <td>
+            <%= form_for([@patient, @visit]) do |f| %>
+                <%= f.fields_for :exams, @visit.exams.new do |e| %>
+                    <label>Attach New Exam
+                      <%= e.hidden_field :viewable_id %>
+                      <%= e.hidden_field :viewable_type %>
+                      <%= e.file_field :attachment %>
+                    </label>
+                    <%= f.submit "Upload" %>
+                <% end %>
+            <% end %>
+          </td>
+        </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>

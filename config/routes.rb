@@ -8,7 +8,12 @@ Itrack::Application.routes.draw do
   resources :patients do
     collection { post :search, to: 'patients#index' }
     resources :patient_medical_conditions
-    resources :visits  do
+    resources :visits do
+      member do
+        get :exams
+        get :exam
+        delete :exam
+      end
       resources :patient_visit_reasons
     end
   end

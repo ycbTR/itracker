@@ -42,6 +42,7 @@ gem "twitter-bootstrap-rails"
 
 gem "ransack", github: "activerecord-hackery/ransack", branch: "rails-4"
 gem 'kaminari'
+gem 'paperclip'
 
 
 # Use ActiveModel has_secure_password

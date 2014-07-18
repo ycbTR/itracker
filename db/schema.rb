@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140717182739) do
+ActiveRecord::Schema.define(version: 20140718212032) do
+
+  create_table "assets", force: true do |t|
+    t.string   "attachment_file_name"
+    t.string   "attachment_content_type"
+    t.integer  "attachment_file_size"
+    t.datetime "attachment_updated_at"
+    t.integer  "viewable_id"
+    t.string   "viewable_type"
+    t.string   "type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "handle_patient_visits", force: true do |t|
     t.integer  "user_id"

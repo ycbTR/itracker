@@ -1,7 +1,7 @@
 class Patient < ActiveRecord::Base
 
-  has_many :visits
-  has_many :patient_medical_conditions
+  has_many :visits, :dependent => :destroy
+  has_many :patient_medical_conditions, :dependent => :destroy
   has_many :medical_conditions, :through => :patient_medical_conditions
 
 

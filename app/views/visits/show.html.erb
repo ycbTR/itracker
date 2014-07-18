@@ -57,7 +57,8 @@
 
       <%= link_to 'List', patient_visits_path(@patient) %>   |
       <%= link_to 'Edit', edit_patient_visit_path(@patient, @visit) %> |
-      <%= link_to 'Reasons', patient_visit_patient_visit_reasons_path(@patient, @visit) %>
+      <%= link_to 'Reasons', patient_visit_patient_visit_reasons_path(@patient, @visit) %>  |
+      <%= link_to 'Exams', exams_patient_visit_path(@patient, @visit) %>
 
     </div>
   </div>
