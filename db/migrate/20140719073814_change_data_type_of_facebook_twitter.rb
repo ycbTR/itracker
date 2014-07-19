@@ -1,6 +1,9 @@
 class ChangeDataTypeOfFacebookTwitter < ActiveRecord::Migration
   def change
-    change_column :patients, :facebook_account, :boolean
-    change_column :patients, :twitter_account, :boolean
+    remove_column :patients, :facebook_account
+    remove_column :patients, :twitter_account
+
+    add_column :patients, :facebook_account, :boolean
+    add_column :patients, :twitter_account, :boolean
   end
 end
