@@ -1,6 +1,14 @@
-<h1>Editing patient</h1>
+<div class="row-fluid">
+  <div class="span6">
+    <%= link_to '< Back', patients_path, class: "pull-left" %>   <br>
+    <strong>Patient: <%= @patient.fullname %></strong>
+  </div>
+  <div class="span6"><h2 class="pull-right">Edit Registration Form</h2>
+  </div>
+</div>
+<hr>
+
+
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @patient %> |
-<%= link_to 'Back', patients_path %>

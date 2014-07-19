@@ -81,12 +81,12 @@
 
       <p>
         <strong>Facebook account:</strong>
-        <%= @patient.facebook_account %>
+        <%= human_boolean @patient.facebook_account %>
       </p>
 
       <p>
         <strong>Twitter account:</strong>
-        <%= @patient.twitter_account %>
+        <%= human_boolean @patient.twitter_account %>
       </p>
       <%= link_to 'Edit', edit_patient_path(@patient) %> |
       <%= link_to 'Next', patient_patient_medical_conditions_path(@patient) %>

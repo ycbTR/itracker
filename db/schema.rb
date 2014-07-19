@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140718212032) do
+ActiveRecord::Schema.define(version: 20140719073814) do
 
   create_table "assets", force: true do |t|
     t.string   "attachment_file_name"
@@ -70,8 +70,8 @@ ActiveRecord::Schema.define(version: 20140718212032) do
     t.integer  "salutation_id"
     t.string   "email1"
     t.string   "email2"
-    t.string   "facebook_account"
-    t.string   "twitter_account"
+    t.boolean  "facebook_account", limit: 255
+    t.boolean  "twitter_account",  limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
