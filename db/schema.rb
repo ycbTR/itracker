@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140719073814) do
+ActiveRecord::Schema.define(version: 20140719093826) do
 
   create_table "assets", force: true do |t|
     t.string   "attachment_file_name"
@@ -132,6 +132,7 @@ ActiveRecord::Schema.define(version: 20140719073814) do
     t.text     "med_allergy_list"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "sleep_with_lens"
   end
 
 end

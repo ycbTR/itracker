@@ -5,12 +5,13 @@
 
     <div class="span9">
 
-      <h1>Listing Medical Conditions</h1>
+      <h3>Listing Visit Reasons
+        <small>Visit Date: <%= @visit.date_visit.to_date %></small>
+      </h3>
 
       <table class="table">
         <thead>
         <tr>
-          <th>Visit Date</th>
           <th>Reason</th>
         </tr>
         </thead>
@@ -18,7 +19,6 @@
         <tbody>
         <% @patient_visit_reasons.each do |patient_visit_reason| %>
             <tr>
-              <td><%= @visit.date_visit.to_date %></td>
               <td><%= patient_visit_reason.reason.name %></td>
             </tr>
         <% end %>

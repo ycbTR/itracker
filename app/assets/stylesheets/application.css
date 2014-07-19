@@ -11,3 +11,19 @@
  *= require_self
  *= require_tree .
  */
+
+.marR10 {
+    margin-right: 10px !important;
+}
+
+.align-left {
+    text-align: left !important;
+}
+
+.date-select select {
+    width: 99px;
+}
+
+.table.no-border td {
+    border: none !important;
+}

@@ -13,8 +13,6 @@
           <th>Date visit</th>
           <th>Length since last visit</th>
           <th></th>
-          <th></th>
-          <th></th>
         </tr>
         </thead>
 
@@ -24,8 +22,6 @@
               <td><%= visit.date_visit.to_date %></td>
               <td><%= visit.length_since_last_visit %></td>
               <td><%= link_to 'Show', [@patient, visit] %></td>
-              <td><%= link_to 'Edit', edit_patient_visit_path(@patient, visit) %></td>
-              <td><%= link_to 'Destroy', [@patient, visit], method: :delete, data: {confirm: 'Are you sure?'} %></td>
             </tr>
         <% end %>
         </tbody>

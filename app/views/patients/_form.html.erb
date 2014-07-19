@@ -16,9 +16,9 @@
         <%= f.select :salutation_id, Salutation.all.collect { |i| [i.name, i.id] }, {}, class: "input-mini" %>
       </div>
       <div class="span5">
-        <%= f.text_field :firstname, class: "span5", placeholder: "Firstname" %>
+        <%= f.text_field :firstname, class: "span5", placeholder: "Firstname*", :required => true %>
         <%= f.text_field :middlename, class: "span2", placeholder: "M" %>
-        <%= f.text_field :lastname, class: "span5", placeholder: "Lastname" %>
+        <%= f.text_field :lastname, class: "span5", placeholder: "Lastname*", :required => true %>
       </div>
     </div>
     <br>
@@ -28,10 +28,10 @@
 
     <div class="control-group">
       <div class="span1">
-        Address 1
+        Address 1*
       </div>
       <div class="span5">
-        <%= f.text_field :addr1, class: "span12" %>
+        <%= f.text_field :addr1, class: "span12",:required => true %>
       </div>
     </div>
     <div class="control-group">
@@ -45,23 +45,23 @@
 
     <div class="control-group">
       <div class="span1">
-        City:
+        City:*
       </div>
       <div class="span1">
-        <%= f.text_field :city, class: "span12" %>
+        <%= f.text_field :city, class: "span12",:required => true %>
       </div>
       <div class="span1">
-        State:
+        State:*
       </div>
       <div class="span1">
-        <%= f.text_field :state, class: "span12" %>
+        <%= f.text_field :state, class: "span12",:required => true %>
       </div>
 
       <div class="span1">
-        Zip:
+        Zip:*
       </div>
       <div class="span1">
-        <%= f.text_field :zip_code, class: "span12" %>
+        <%= f.text_field :zip_code, class: "span12",:required => true %>
       </div>
     </div>
 
@@ -69,10 +69,10 @@
 
     <div class="control-group">
       <div class="span3">
-        Please select your date of birth
+        Please select your date of birth*
       </div>
       <div class="span9 date-select">
-        <%= f.date_select :date_of_birth, start_year: 1900 %>
+        <%= f.date_select :date_of_birth, start_year: 1900,:required => true %>
       </div>
     </div>
 
@@ -81,10 +81,10 @@
 
     <div class="control-group">
       <div class="span1">
-        Phone1:
+        Phone1:*
       </div>
       <div class="span2">
-        <%= f.text_field :phone1, class: "span12" %>
+        <%= f.text_field :phone1, class: "span12",:required => true %>
       </div>
       <div class="span1">
         Email1:
@@ -138,16 +138,3 @@
     <br>
 <% end %>
 
-<style type="text/css">
-    .marR10 {
-        margin-right: 10px !important;
-    }
-
-    .align-left {
-        text-align: left !important;
-    }
-
-    .date-select select {
-        width: 99px;
-    }
-</style>

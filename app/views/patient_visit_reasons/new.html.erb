@@ -1,7 +1,23 @@
 <div class="row-fluid">
-  <div class="span12">
-    <h1>New patient_visit_reason</h1>
-    <%= render "form" %>
+  <div class="span6">
     <%= link_to 'Back', patient_visit_patient_visit_reasons_path(@patient, @visit) %>
+    <br>
+    <strong>Patient: <%= @patient.fullname %></strong>
+  </div>
+  <div class="span6"><h2 class="pull-right">Patient Visit Reasons</h2>
   </div>
 </div>
+<hr>
+
+
+
+<div class="row-fluid">
+  <div class="span12">
+    <%= render "form" %>
+  </div>
+</div>
+
+
+
+
+

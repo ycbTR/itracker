@@ -1,6 +1,23 @@
-<h3>Patient: <%= @patient.fullname %>
-</h3>
+<div class="row-fluid">
+  <div class="span6">
+    <%= link_to '< Back', patient_visits_path(@patient) %>
+    <br>
+    <strong>Patient: <%= @patient.fullname %></strong> <br>
+  </div>
+  <div class="span6"><h2 class="pull-right">Patient Visit Form</h2>
+  </div>
+</div>
+<hr>
 
-<%= render 'form' %>
 
-<%= link_to 'Back', patient_visits_path(@patient) %>
+
+<div class="row-fluid">
+  <div class="span12">
+    <%= render "form" %>
+  </div>
+</div>
+
+
+
+
+

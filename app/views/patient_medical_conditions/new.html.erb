@@ -1,12 +1,23 @@
 <div class="row-fluid">
-  <div class="span12">
-    <h3>Patient: <%= @patient.fullname %>
-      <br>
-      <small style="display: block;">Please check any conditions that apply to your or to family member in the
-        appropriate box (past or present)
-      </small>
-    </h3>
+  <div class="span6">
+    <%= link_to '< Back', patient_patient_medical_conditions_path(@patient) %>
     <br>
-    <%= render 'form' %>
+    <strong>Patient: <%= @patient.fullname %></strong>  <br>
+    <small>Please check any conditions that apply to your or to family member in the
+      appropriate box (past or present)
+    </small>
+  </div>
+  <div class="span6"><h2 class="pull-right">Patient Medical Conditions Form</h2>
   </div>
 </div>
+<hr>
+
+
+
+<div class="row-fluid">
+  <div class="span12">
+    <%= render "form" %>
+  </div>
+</div>
+
+

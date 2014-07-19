@@ -23,8 +23,8 @@
         <% @patient_medical_conditions.each do |patient_medical_condition| %>
             <tr>
               <td><%= patient_medical_condition.medical_condition.name %></td>
-              <td><%= patient_medical_condition.patient_affected %></td>
-              <td><%= patient_medical_condition.family_affected %></td>
+              <td><%= human_boolean patient_medical_condition.patient_affected %></td>
+              <td><%= human_boolean patient_medical_condition.family_affected %></td>
             </tr>
         <% end %>
         </tbody>

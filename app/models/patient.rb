@@ -4,6 +4,7 @@ class Patient < ActiveRecord::Base
   has_many :patient_medical_conditions, :dependent => :destroy
   has_many :medical_conditions, :through => :patient_medical_conditions
 
+  validates :firstname, :lastname, :addr1, :city, :state, :zip_code, :date_of_birth, :phone1, presence: true
 
   accepts_nested_attributes_for :patient_medical_conditions, :allow_destroy => true
 
