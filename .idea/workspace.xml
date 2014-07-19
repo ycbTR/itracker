@@ -36,7 +36,7 @@
     <file path="/exam.html.erb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405720174227" ignored="false" />
     <file path="/exams.html.erb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405720522012" ignored="false" />
     <file path="/application.html.erb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405720662561" ignored="false" />
-    <file path="/_navbar.html.erb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405799189328" ignored="false" />
+    <file path="/_navbar.html.erb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405799505626" ignored="false" />
     <file path="/application.js" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405767443180" ignored="false" />
     <file path="/admin_controller.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405721835726" ignored="false" />
     <file path="/users_controller.rb" changelist="427569fc-f6b6-439c-8e67-e34dc8c00b21" time="1405723598331" ignored="false" />
@@ -63,10 +63,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_navbar.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_navbar.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_navbar.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="107" selection-start="208" selection-end="208" vertical-scroll-proportion="-1.875">
+            <state line="9" column="45" selection-start="417" selection-end="417" vertical-scroll-proportion="0.26732674">
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -75,10 +75,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="12" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.8015123">
+            <state line="63" column="12" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,8 +108,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
-        <option value="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" />
       </list>
     </option>
   </component>
@@ -725,20 +725,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="12" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_navbar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="107" selection-start="208" selection-end="208" vertical-scroll-proportion="-1.875">
+        <state line="9" column="45" selection-start="417" selection-end="417" vertical-scroll-proportion="0.26732674">
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="12" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.8015123">
-          <folding />
         </state>
       </provider>
     </entry>
