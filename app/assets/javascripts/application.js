@@ -29,8 +29,10 @@ jQuery(function () {
         $(this).before($(this).data('fields').replace(regexp, time));
         return event.preventDefault();
     });
+});
 
-    $('.dropdown').hover(function(){
+$(function () {
+    $('.dropdown').hover(function () {
         $('.dropdown-toggle', this).trigger('click');
     });
 
