@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140719093826) do
+ActiveRecord::Schema.define(version: 20140721182051) do
 
   create_table "assets", force: true do |t|
     t.string   "attachment_file_name"
@@ -119,7 +119,7 @@ ActiveRecord::Schema.define(version: 20140719093826) do
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
   create_table "visits", force: true do |t|
-    t.datetime "date_visit"
+    t.date     "date_visit"
     t.date     "length_since_last_visit"
     t.integer  "lens_use_per_day"
     t.boolean  "lens_first_use"

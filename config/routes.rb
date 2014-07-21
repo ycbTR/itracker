@@ -5,6 +5,18 @@ Itrack::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
 
+  resources :reports, only: :index do
+
+    collection do
+      get :daily_visits
+      get :reschedule_visits
+      get :patient_history
+      get :visit_sales
+      get :social_media
+    end
+
+  end
+
   # routes only for users
   authenticated :user, lambda { |u| u.type == "Employee" } do
     root :to => "patients#index", :as => "authenticated_employee_root"

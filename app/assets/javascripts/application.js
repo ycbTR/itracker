@@ -32,8 +32,45 @@ jQuery(function () {
 });
 
 $(function () {
-    $('.dropdown').hover(function () {
-        $('.dropdown-toggle', this).trigger('click');
+//    $('.dropdown').hover(function () {
+//        $('.dropdown-toggle', this).trigger('click');
+//    });
+
+    $('.icon-calendar').click(function () {
+        $(this).prev('.dpicker').focus();
     });
 
+    initialize_range_datepicker();
+
+    $('.datepicker.dpicker').ready(function () {
+        var datepicker = $('.datepicker.dpicker').datepicker({
+            format: "dd-mm-yyyy"
+        }).on('changeDate',function (ev) {
+                datepicker.hide();
+            }).data('datepicker');
+    });
 });
+
+initialize_range_datepicker = function () {
+
+    var start_date = $('#dpd1').datepicker({
+        format: "dd-mm-yyyy"
+    }).on('changeDate',function (ev) {
+            if (ev.date.valueOf() > end_date.date.valueOf()) {
+                var newDate = new Date(ev.date)
+                newDate.setDate(newDate.getDate() + 1);
+                end_date.setValue(newDate);
+            }
+            start_date.hide();
+            $('#dpd2')[0].focus();
+        }).data('datepicker');
+    var end_date = $('#dpd2').datepicker({
+        format: "dd-mm-yyyy",
+        onRender: function (date) {
+            return date.valueOf() <= start_date.date.valueOf() ? 'disabled' : '';
+        }
+    }).on('changeDate',function (ev) {
+            end_date.hide();
+        }).data('datepicker');
+
+};
