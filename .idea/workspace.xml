@@ -71,6 +71,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="_navbar.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_navbar.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="0" selection-start="1432" selection-end="1432" vertical-scroll-proportion="0.80912864">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="visit_sales.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/reports/visit_sales.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="0" selection-start="1537" selection-end="1537" vertical-scroll-proportion="0.8221344">
+            <state line="64" column="0" selection-start="1537" selection-end="1537" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -121,7 +130,7 @@
       <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="47" selection-start="1528" selection-end="1528" vertical-scroll-proportion="0.0">
+            <state line="40" column="39" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -156,14 +165,14 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140721182051_change_data_format_of_visit_date.rb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/reports_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/reports/visit_sales.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reports/social_media.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reports/reschedule_visits.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reports/daily_visits.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" />
       </list>
     </option>
   </component>
@@ -920,26 +929,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_navbar.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="1383" selection-end="1383" vertical-scroll-proportion="-9.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/reports_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="47" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="47" selection-start="1528" selection-end="1528" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -975,7 +968,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="1537" selection-end="1537" vertical-scroll-proportion="0.8221344">
+        <state line="64" column="0" selection-start="1537" selection-end="1537" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="39" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_navbar.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="1432" selection-end="1432" vertical-scroll-proportion="0.80912864">
           <folding />
         </state>
       </provider>

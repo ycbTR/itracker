@@ -31,10 +31,9 @@ jQuery(function () {
     });
 });
 
-$(function () {
-//    $('.dropdown').hover(function () {
-//        $('.dropdown-toggle', this).trigger('click');
-//    });
+
+var ready;
+ready = function () {
 
     $('.icon-calendar').click(function () {
         $(this).prev('.dpicker').focus();
@@ -49,7 +48,11 @@ $(function () {
                 datepicker.hide();
             }).data('datepicker');
     });
-});
+};
+
+$(document).ready(ready);
+$(document).on('page:load', ready);
+
 
 initialize_range_datepicker = function () {
 
