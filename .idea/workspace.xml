@@ -85,6 +85,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="13" selection-start="180" selection-end="180" vertical-scroll-proportion="0.2268431">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -94,10 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="history.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="history.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/patients/history.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="48" selection-start="527" selection-end="527" vertical-scroll-proportion="0.45731708">
+            <state line="16" column="39" selection-start="616" selection-end="616" vertical-scroll-proportion="-10.0">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -126,7 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/controllers/policies_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/home/privacy_policy.html.erb" />
@@ -142,6 +150,7 @@
         <option value="$PROJECT_DIR$/app/views/shared/_navbar.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/patients/history.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -1145,13 +1154,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/gems/activesupport-4.0.4/lib/active_support/core_ext/date/conversions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="25" selection-start="1242" selection-end="1256" vertical-scroll-proportion="0.24763705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/patient.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="50" selection-start="598" selection-end="598" vertical-scroll-proportion="0.4536862">
@@ -1254,12 +1256,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/patients/history.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="48" selection-start="527" selection-end="527" vertical-scroll-proportion="0.45731708">
+        <state line="16" column="39" selection-start="616" selection-end="616" vertical-scroll-proportion="-10.0">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="180" selection-end="180" vertical-scroll-proportion="0.2268431">
+          <folding />
         </state>
       </provider>
     </entry>
