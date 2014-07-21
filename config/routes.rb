@@ -5,6 +5,8 @@ Itrack::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
 
+  get "/policies/dilation", to: "home#dilation_policy", as: :dilation_policy
+  get "/policies/privacy", to: "home#privacy_policy", as: :privacy_policy
   resources :reports, only: :index do
 
     collection do
