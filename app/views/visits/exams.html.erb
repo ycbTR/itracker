@@ -18,8 +18,8 @@
         <tbody>
         <% @exams.each do |exam| %>
             <tr>
-              <td><%= link_to exam.attachment_file_name, exam_patient_visit_path(@patient, @visit, exam_id: exam.id), "_blank" => true %></td>
-              <td><%= link_to "DELETE", exam_patient_visit_path(@patient, @visit, exam_id: exam.id), "_blank" => true, method: :delete, confirm: "Are sure you want to erase this record?" %></td>
+              <td><%= link_to exam.attachment_file_name, exam_patient_visit_path(@patient, @visit, exam_id: exam.id), "target" => "_blank" %></td>
+              <td><%= link_to "DELETE", exam_patient_visit_path(@patient, @visit, exam_id: exam.id), method: :delete, confirm: "Are sure you want to erase this record?" %></td>
             </tr>
         <% end %>
         <% if @exams.blank? %>

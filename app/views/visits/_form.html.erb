@@ -44,7 +44,7 @@
         Are you allergic to any medications?
       </div>
       <div class="span5 date-select">
-        <%= f.select :med_allergy, [["Yes", true], ['No', false]] %>
+        <%= f.select :med_allergy, [["No", false], ['Yes', true]] %>
       </div>
     </div>
     <div class="control-group">
@@ -63,7 +63,7 @@
         <small><%= link_to "Click Here", dilation_policy_path, :target => "_blank" %> to learn more about dilation.</small>
       </div>
       <div class="span5 date-select">
-        <%= f.select :dilation_consent, [["Yes", true], ['No', false]] %>
+        <%= f.select :dilation_consent, [["No", false], ['Yes', true]] %>
       </div>
     </div>
 
@@ -74,7 +74,7 @@
         <small><%= link_to "Click Here", privacy_policy_path, :target => "_blank" %> to view office privacy notice.</small>
       </div>
       <div class="span5 date-select">
-        <%= f.select :privacy_consent, [["Yes", true], ['No', false]] %>
+        <%= f.select :privacy_consent, [["No", false], ['Yes', true]] %>
       </div>
     </div>
 
@@ -86,7 +86,7 @@
           Is this your first time trying contact lenses?
         </div>
         <div class="span5 date-select">
-          <%= f.select :lens_first_use, [["Yes", true], ['No', false]] %>
+          <%= f.select :lens_first_use, [["No", false], ['Yes', true]] %>
         </div>
       </div>
 
@@ -104,7 +104,7 @@
           Do you sleep in your contact lenses frequently?
         </div>
         <div class="span5 date-select">
-          <%= f.select :sleep_with_lens, [["Yes", true], ['No', false]] %>
+          <%= f.select :sleep_with_lens, [["No", false], ['Yes', true]] %>
         </div>
       </div>
     </fieldset>

@@ -1,4 +1,4 @@
-<div class="span3">
+<div class="span3 hidden-print">
   <div class="well sidebar-nav">
     <ul class="nav nav-list">
       <li class="nav-header">Patient: <%= @patient.fullname %></li>
@@ -8,6 +8,9 @@
       </li>
       <li>
         <i class="icon icon-check<%= "-empty" if @patient.visits.blank? %>"> <%= link_to "Visits", patient_visits_path(@patient) %></i>
+      </li>
+      <li>
+        <i class="icon icon-check<%= "-empty" if @patient.visits.blank? %>"> <%= link_to "History", history_patient_path(@patient) %></i>
       </li>
     </ul>
   </div>

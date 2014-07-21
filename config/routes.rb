@@ -12,7 +12,6 @@ Itrack::Application.routes.draw do
     collection do
       get :daily_visits
       get :reschedule_visits
-      get :patient_history
       get :visit_sales
       get :social_media
     end
@@ -38,6 +37,9 @@ Itrack::Application.routes.draw do
   resources :users
 
   resources :patients do
+    member do
+      get :history
+    end
     collection { post :search, to: 'patients#index' }
     resources :patient_medical_conditions
     resources :visits do

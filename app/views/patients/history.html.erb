@@ -1,0 +1,69 @@
+<div class="row-fluid">
+  <div class="span12">
+
+    <%= render partial: "shared/sidebar" %>
+
+    <div class="span9">
+      <div class="span12" style="margin-left: 8px;">
+        <div class="span11">
+        <p><strong>Patient Name:</strong> <%= @patient.fullname %></p>
+
+        <p><strong>Date of Birth:</strong> <%= @patient.date_of_birth.to_date.to_formatted_s(:long) %></p>
+
+        <p><strong>Age:</strong> <%= @patient.age %></p>
+        </div>
+        <div class="span1">
+          <i class="icon icon-print hidden-print" onclick="window.print();" style="font-size: 22px; cursor: pointer;"></i>
+        </div>
+      </div>
+      <br>
+
+      <!--Medical Conditions-->
+      <div class="span6" style="margin-left: 0px;">
+        <table class="table table-bordered marT10">
+          <thead>
+          <tr>
+            <th>Medical conditions</th>
+            <th>Patient affected</th>
+            <th>Family affected</th>
+          </tr>
+          </thead>
+          <tbody>
+          <% @patient_medical_conditions.each do |patient_medical_condition| %>
+              <tr>
+                <td><%= patient_medical_condition.medical_condition.name %></td>
+                <td><%= human_boolean patient_medical_condition.patient_affected %></td>
+                <td><%= human_boolean patient_medical_condition.family_affected %></td>
+              </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
+
+
+      <div class="span8" style="margin-left: 0px;">
+        <!--Visits-->
+        <table class="table table-bordered marT10">
+          <thead>
+          <tr>
+            <th>Date of Visit</th>
+            <th>Test Result (Attachment)</th>
+            <th class="hidden-print">Details</th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <% @visits.each do |visit| %>
+              <tr>
+                <td><%= visit.date_visit.to_date %></td>
+                <td><%= visit.exams.collect { |e| link_to(e.attachment_file_name, exam_patient_visit_path(@patient, visit, exam_id: e.id), "target" => "_blank").html_safe }.join(', ').html_safe %></td>
+                <td class="hidden-print"><%= link_to 'Show More', [@patient, visit] %></td>
+              </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>

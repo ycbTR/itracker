@@ -12,11 +12,6 @@ class ReportsController < ApplicationController
     load_visits
   end
 
-  def patient_history
-    @patient = Patient.find(params[:patient_id])
-    @visits = @patient.visits
-  end
-
 
   def visit_sales
     params[:q] ||= {}

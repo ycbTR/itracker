@@ -16,6 +16,7 @@
 .marR10 {
     margin-right: 10px !important;
 }
+
 .marT10 {
     margin-top: 10px !important;
 }
@@ -34,4 +35,9 @@
 
 .table.no-border td {
     border: none !important;
+}
+@media print {
+    a[href]:after {
+        content: "" !important;
+    }
 }
